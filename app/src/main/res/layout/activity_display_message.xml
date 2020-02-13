@@ -8,15 +8,10 @@
 
     <TextView
         android:id="@+id/messageTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginLeft="128dp"
-        android:layout_marginTop="119dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginRight="224dp"
-        android:layout_marginBottom="593dp"
-        android:text="TextView"
+       
+        android:text="Message"
         android:textAlignment="center"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +23,7 @@
 
     <Button
         android:id="@+id/closeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="323dp"
         android:layout_marginBottom="211dp"
