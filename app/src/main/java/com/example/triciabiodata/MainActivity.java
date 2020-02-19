@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,6 +40,18 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflateMenu = getMenuInflater();
         inflateMenu.inflate(R.menu.information, Menu2);
         return true;
+    }
+    public boolean onOPtionItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case  R.id.btnmarket:
+            startActivity(new Intent(this,menu.class));
+            return true;
+            case R.id.btnbank:
+                startActivity(new Intent(this,menu2.class));
+                return true;
+                default:
+                    return super.onContextItemSelected(item);
+        }
     }
 
 }
