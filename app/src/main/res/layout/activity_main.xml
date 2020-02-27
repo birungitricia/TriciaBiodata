@@ -17,9 +17,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:padding="30dp"
-        android:text="TRICIA"
-        android:textSize="40dp"
+        android:padding="10dp"
+        android:text="NUTRITION"
+        android:textSize="30dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,26 +28,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/hello"
-        android:layout_width="176dp"
-        android:layout_height="50dp"
-        android:layout_margin="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="62dp"
-        android:padding="3dp"
-        android:text="HELLO WORLD"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416" />
 
     <TextView
         android:id="@+id/hostel"
@@ -57,37 +37,35 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="62dp"
         android:padding="1dp"
-        android:text="kakoba"
+        android:text="food"
         android:textColor="@color/colorPrimary"
         android:textSize="30dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.34" />
 
     <Button
         android:id="@+id/sendButton"
-        android:layout_width="77dp"
-        android:layout_height="68dp"
+        android:layout_width="81dp"
+        android:layout_height="52dp"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginRight="278dp"
         android:layout_marginBottom="20dp"
         android:onClick="sendMessage"
         android:text="Send"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.704" />
 
     <EditText
         android:id="@+id/message"
@@ -97,29 +75,40 @@
         android:layout_marginLeft="49dp"
         android:layout_marginEnd="149dp"
         android:layout_marginRight="149dp"
-        android:layout_marginBottom="200dp"
         android:ems="10"
-        android:hint="Enter the message"
+        android:hint="Enter the food you want"
         android:inputType="textPersonName"
-        android:text="Message"
-        app:layout_constraintBottom_toTopOf="@+id/sendButton"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.578" />
 
     <Button
         android:id="@+id/btnmusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="304dp"
-        android:layout_marginRight="304dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
         android:text="music"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintVertical_bias="0.816" />
+
+    <Button
+        android:id="@+id/btnc"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:text="cp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

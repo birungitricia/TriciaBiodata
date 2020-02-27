@@ -26,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button cro=(Button)findViewById(R.id.btnc);
+        cro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,taso.class);
+                startActivity(intent);
+            }
+        });
     }
     public void sendMessage(View view){
         EditText message = (EditText)findViewById(R.id. message);
@@ -41,17 +49,24 @@ public class MainActivity extends AppCompatActivity {
         inflateMenu.inflate(R.menu.information, Menu2);
         return true;
     }
-    public boolean onOPtionItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case  R.id.btnmarket:
-            startActivity(new Intent(this,menu.class));
-            return true;
-            case R.id.btnbank:
-                startActivity(new Intent(this,menu2.class));
-                return true;
-                default:
-                    return super.onContextItemSelected(item);
-        }
-    }
+    public boolean onOptionsItemSelected(MenuItem item){
 
+
+            switch (item.getItemId()){
+                case  R.id.btnmarket:
+                    startActivity(new Intent(this,menu.class));
+                    return true;
+                case R.id.btnshop:
+                    startActivity(new Intent(this,menu2.class));
+                    return true;
+                case R.id.hotel:
+                    startActivity(new Intent(this,listview.class));
+                    return true;
+
+                    default:
+
+            return super.onContextItemSelected(item);
+        }
+
+    }
 }
