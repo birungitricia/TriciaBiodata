@@ -16,7 +16,7 @@ public class mac extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mac);
-        play=findViewById(R.id.play);
+        play=(Button) findViewById(R.id.play);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class mac extends AppCompatActivity {
                mediaPlayer.start();
             }
         });
-        stop=(Button) findViewById(R.id.stop);
+        stop=(Button)findViewById(R.id.stop);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
