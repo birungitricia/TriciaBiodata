@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".listview"></activity>
+        <activity android:name=".splash"></activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".menu2" />
-        <activity android:name=".menu" />
         <activity android:name=".mac" />
         <activity android:name=".taso" />
+        <activity android:name=".menu2" />
+        <activity android:name=".listview" />
+        <activity android:name=".menu" />
+
         <activity android:name=".DisplayMessageActivity" />
         <activity android:name=".splashactivity">
             <intent-filter>
@@ -23,6 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".BioService"></service>
+
+
     </application>
 
 </manifest>
