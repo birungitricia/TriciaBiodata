@@ -27,8 +27,7 @@ public class BioService extends Service
 
     @Override
     public  void onDestroy() {
-        //MediaPlayer player =MediaPlayer.create(this, Settings.System.DEFAULT_RINGTONE_URI);
-        //player.setLooping(true);
+        super.onDestroy();
         player.stop();
 
     }

@@ -11,7 +11,6 @@ import android.widget.Button;
 
 public class menu extends AppCompatActivity implements View.OnClickListener {
     private Button start,stop;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,14 +21,10 @@ public class menu extends AppCompatActivity implements View.OnClickListener {
         start.setOnClickListener(this);
         stop.setOnClickListener(this);
 
-
         MediaPlayer player =MediaPlayer.create(this, Settings.System.DEFAULT_RINGTONE_URI);
         player.setLooping(true);
         player.start();
-
-
     }
-
     @Override
     public void onClick(View view) {
      if (view == start){
@@ -38,6 +33,5 @@ public class menu extends AppCompatActivity implements View.OnClickListener {
      }else if (view==stop){
          stopService(new Intent(this,BioService.class));
      }
-
     }
 }

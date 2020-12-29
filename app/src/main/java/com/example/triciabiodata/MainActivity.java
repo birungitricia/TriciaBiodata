@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 player.stop();
             }
         });
+
+
+
         Button music=(Button)findViewById(R.id.btnmusic);
         music.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         Button cro=(Button)findViewById(R.id.btnc);
         cro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,13 +79,13 @@ public class MainActivity extends AppCompatActivity {
 
 
             switch (item.getItemId()){
-                case  R.id.btnmarket:
+                case  R.id.calcium:
                     startActivity(new Intent(this,menu.class));
                     return true;
-                case R.id.btnshop:
+                case R.id.protein:
                     startActivity(new Intent(this,menu2.class));
                     return true;
-                case R.id.hotel:
+                case R.id.hydrate:
                     startActivity(new Intent(this,listview.class));
                     return true;
 
