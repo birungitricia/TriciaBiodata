@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(this,menu.class));
                     return true;
                 case R.id.protein:
-                    startActivity(new Intent(this,menu2.class));
+                    startActivity(new Intent(this,MapsActivity.class));
                     return true;
                 case R.id.hydrate:
                     startActivity(new Intent(this,listview.class));
